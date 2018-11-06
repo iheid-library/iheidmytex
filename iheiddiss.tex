@@ -7,13 +7,22 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage{geometry}
 \geometry{dvips,a4paper,margin=0.75in}
+\usepackage{ragged2e} % this offers options for centering, justification, etc.
 
 % Setup fonts % % %
 \usepackage[T1]{fontenc}
 %\usepackage[utf8]{inputenc}
-\usepackage{ragged2e}
-\usepackage{microtype}
+\usepackage{microtype} % this makes fonts almost imperceptibly smoother
+\usepackage{fontspec}
+% For the headings we will use Helvetica
 \usepackage{helvet}
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
+% For the main text and equations we will use Baskerville and Palatino
+\usepackage{mathpazo}
+\usepackage{baskervald}
+% For formatting code or package names, we will use Lucida Console
+\usepackage{zi4}
 
 % Setup figures % % %
 \usepackage[]{graphicx}
@@ -24,6 +33,7 @@
 style=authoryear, % use this if you are in any other department
 % change the following only if you know what you are doing:
 maxcitenames=3, % how many authors to cite before resorting to ``et al''
+maxbibnames=99, % in the bibliography we want them all though
 sortcites=true, % this re-sorts citations when you cite several at once
 hyperref=true, % this adds a link to a citations date that points to the reference
 %backref=true, % references state on which page they are cited
@@ -86,9 +96,18 @@ Submitted in partial fulfilment of the requirements for the\\
 \newpage
 \pagenumbering{arabic}
 \justifying
-\rmfamily
 
-\textcite{Hollway:2017ke} is an example of an in-text citation. If you use ``autocite'' \autocite{Hollway:2017ke}, then the style will automatically update when you change it's configuration above. To learn more about how to use ``biblatex'', the package we are using here for referencing, see \href{http://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf}{this cheatsheet}.
+\section{Intro}
+
+\textcite{Hollway:2017ke} is an example of an in-text citation. If you use ``autocite'' \autocite{Hollway:2017ke}, then the style will automatically update when you change it's configuration in the \TeX~ file. To learn more about how to use ``biblatex'', the package we are using here for referencing, see \href{http://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf}{this cheatsheet}.
+
+If you want to change fonts, check \href{https://www.tug.org/pracjourn/2006-1/schmidt/schmidt.pdf}{here}.
+
+Math can be inline such as $ y = \alpha + \beta x + \epsilon $ or look like this: $$ \bar{x} = \frac{1}{n} \sum_{i=1}^{n}x_i $$
+
+The math might express an equation used in a \texttt{package}. Indeed, you can write whole sections of code like so:
+
+\texttt{model1 <- estimate(y \textasciitilde~ x1 + x2, data)}
 	
 \newpage
 \printbibliography
