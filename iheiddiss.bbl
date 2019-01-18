@@ -1,0 +1,73 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Hollway:2017ke}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=62974c3766781d8b75da83e272f7bb62}{%
+           family={Hollway},
+           familyi={H\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b3f2cc945035e4a1e3f5833cca99cf9f}{%
+           family={Lomi},
+           familyi={L\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b277f78298018ceaa10f59662394b0af}{%
+           family={Pallotti},
+           familyi={P\bibinitperiod},
+           given={Francesca},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fdd0e0f4b420b7b817f963d68eb0cade}{%
+           family={Stadtfeld},
+           familyi={S\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f02132c7d12334a6bc97abb003a4c636}
+      \strng{fullhash}{64980e11fe1f3371f6545e188d68f616}
+      \strng{bibnamehash}{f02132c7d12334a6bc97abb003a4c636}
+      \strng{authorbibnamehash}{f02132c7d12334a6bc97abb003a4c636}
+      \strng{authornamehash}{f02132c7d12334a6bc97abb003a4c636}
+      \strng{authorfullhash}{64980e11fe1f3371f6545e188d68f616}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Network Science}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{{Multilevel social spaces: The network dynamics of organizational fields}}
+      \field{volume}{5}
+      \field{year}{2017}
+      \field{pages}{187\bibrangedash 212}
+      \range{pages}{26}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
