@@ -1,5 +1,10 @@
 # Changelog
 
+v0.1.1
+- Move project metadata to separate "projectinfo.cls" file
+- Move optional packages to iheid template
+- Add tex-file for simple papers
+
 v0.1.0
 - Add title pages to fit IHEID PhD Word-template
 - Add fancy header/footer

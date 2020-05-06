@@ -3,41 +3,34 @@
 % % % % % % % % % % % % %
 \documentclass{iheid}
 
-% Setup meta-data of your project
-\renewcommand{\mytitle}{A Project Title}
-\renewcommand{\mylastname}{Lastname}
-\renewcommand{\myfirstname}{Firstname}
-\renewcommand{\myprogramme}{PhD in Your Department}
-\renewcommand{\mythesisno}{99999} % provided by PhD secretariat
-\renewcommand{\mykeywords}{your, keywords} % only used for PDF metadata
-\renewcommand{\mysubject}{Theme of your thesis} % only used for PDF metadata
+% Setup different header and footer for title page(s)
+\fancypagestyle{firstpages} {
+	\fancyhf{} % clear header and footer
+	\renewcommand{\headrulewidth}{0pt} % remove header line
+	\renewcommand{\footrulewidth}{0pt} % remove footer line
+}
 
-% Re-define title and author (don't touch this unless you know what you're doing)
-\title{\mytitle}
-\renewcommand{\myauthor}{\myfirstname {} \mylastname}
-\author{\myauthor}
-
-% Optional packages
-\usepackage{float} % allow forced placement of figures/tables
-\usepackage{makecell} % fixed-width cells in tables
-\usepackage{multirow} % rowspan in tables
-\usepackage{booktabs} % nicer lines for tables
-\usepackage{titlesec} % customize sections
-\usepackage[hypcap]{caption} % customize captions
-\usepackage[capitalise]{cleveref} % automatic detection of link types
-
-% Optional adjustments to style of sections and paragraphs
-\newcommand{\sectionbreak}{\clearpage} % start sections on new page
-\titleformat{\section}{\normalfont\LARGE\bfseries}{\thesection.}{1em}{} % section title style
-\titlespacing*{\section}{0pt}{\parskip}{-\parskip} % spacing between section title and paragraph
-\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection.}{1em}{} % subsection title style
-\titlespacing*{\subsection}{0pt}{\parskip}{-\parskip} % spacing between subsection title and paragraph
-\titleformat{\subsubsection}{\normalfont\normalsize\itshape}{\thesubsubsection.}{1em}{} % subsubsection title style
-\titlespacing*{\subsubsection}{0pt}{\parskip}{-\parskip} % spacing between subsubsection title and paragraph
-\setlength{\parskip}{1em} % paragraph spacing
-\setlength{\parindent}{0em} % paragraph indentation
-\captionsetup[figure]{font={it},labelformat={default},labelsep=period,textfont={normal},justification=justified,name={Figure}} % figure caption style
-\captionsetup[table]{font={it},labelformat={default},labelsep=period,textfont={normal},justification=justified,name={Table}} % table caption style
+% Setup custom title format
+\makeatletter
+\renewcommand\maketitle
+  {\vspace*{3cm} % distance from top of page to title
+  \centering{
+  \Large\sffamily\textbf{\@title}
+  \vspace{1cm}\par % distance to programme statement
+  \centering\large\sffamily\textbf{THESIS}\\
+  submitted at the Graduate Institute\\
+  in fulfillment of the requirements of the\\
+  \myprogramme
+  \vspace*{0.5cm}\par % distance to author
+  \centering\large\sffamily{
+	by\\
+	\vspace{0.5cm} % distance between 'by' and author name
+	\@author
+  }
+  \bigskip\par
+  }
+  }
+\makeatother
 
 % % % % % % % % % % % % %
 % Document Starts Here % % %
@@ -70,13 +63,13 @@
 
 % TITLEPAGE 3
 \begin{titlepage}
-\vspace*{10cm}
+\vspace*{5cm}
 
 \centering\Large\sffamily\textbf{\mytitle}
 
 \vspace*{10cm}
 
-\raisebox{0.1em}{\textcopyright} \sffamily\textbf{\the\year} \hspace{1em} \sffamily\textbf{\MakeUppercase{\mylastname}}
+\large\raisebox{0.1em}{\textcopyright} \sffamily\textbf{\the\year} \hspace{1em} \sffamily\textbf{\MakeUppercase{\mylastname}}
 
 \thispagestyle{firstpages}
 \end{titlepage}
