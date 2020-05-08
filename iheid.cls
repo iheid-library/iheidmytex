@@ -61,6 +61,7 @@ autolang=hyphen]{biblatex}
 \newcommand{\mylogo}{Logo_CMYK_Hi.eps} % name of the IHEID logo file
 
 % Setup links and PDF metadata
+\usepackage{varioref} % automated decoration of references with words about position
 \RequirePackage[colorlinks=true,linkcolor=black,citecolor=red,filecolor=red,urlcolor=red, bookmarks]{hyperref} % uses IHEID red for external links
 \hypersetup{
 pdftitle = {\mytitle},
