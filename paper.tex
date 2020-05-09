@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%% 
+% PREAMBLE 
+%%%%%%%%%%%%%%%%%
+\documentclass{iheid}
+
+% Setup date
+\usepackage[en-GB]{datetime2}
+\DTMlangsetup[en-GB]{showdayofmonth=false}
+
+% Define title and author
+\author{
+\myauthor$^{1,\ast}$, Second Author$^{1}$ % add other authors manually
+}
+\date{} % remove to print date below title
+
+% Setup header and footer for title page
+\fancypagestyle{firstpages} {
+	\fancyhf{} % clear header and footer
+	\renewcommand{\headrulewidth}{0pt} % header line
+	\renewcommand{\footrulewidth}{0.01pt} % footer line
+	\fancyfoot[L]{\footnotesize{
+	$^{1}$\it{Graduate Institute of International and Development Studies, Department of \mydepartment, Geneva, Switzerland.}\\
+	$^\ast$\it{Corresponding author. E-Mail: \href{mailto:\myemail}{\myemail}.}\\
+	The authors would like to thank ... This project was supported by research grant...
+	}}
+}
+
+% Add other authors to header as needed
+\fancyhead[HRE]{\mylastname/Otherlastname} % set header: H = header, R = right side, E = even page number
+
+%%%%%%%%%%%%%%%%% 
+% END OF PREAMBLE
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% 
+% DOCUMENT BODY 
+%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{titlepage}
+\maketitle % Insert title (and optionally date, see date option in preamble)
+
+\begin{center}
+Draft: \today\\
+Please do not cite or circulate
+\end{center}
+
+\begin{abstract}
+ABSTRACT
+\end{abstract}
+
+\begin{center}
+{Keywords: \it \mykeywords}
+\end{center}
+
+\thispagestyle{firstpages} % Set page style for this page only (adjusting header/footer and page geometry)
+\end{titlepage} 
+
+\restoregeometry % Reset page geometry
+\setcounter{page}{1} % Reset page counter 
+\clearpage % Insert page break
+
+\section{Section Title}\label{sec:intro}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+\footnote{
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+}.
+
+%%%%%%%%%%%%%%%%% 
+% BIBLIOGRAPHY
+%%%%%%%%%%%%%%%%%
+\printbibliography 
+
+%%%%%%%%%%%%%%%%%
+% APPENDICES
+%%%%%%%%%%%%%%%%%
+\appendix
+
+\section{Some SI Section}\label{app:LABEL}
+
+%%%%%%%%%%%%%%%%% 
+% END DOCUMENT BODY
+%%%%%%%%%%%%%%%%%
+\end{document}
