@@ -19,10 +19,12 @@ jobs:
         with:
           fetch-depth: '0'
       - name: Bump version and push tag
+        id: newtag
         uses: anothrNick/github-tag-action@1.17.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
+          DEFAULT_BUMP: patch
       - name: Checkout two
         uses: actions/checkout@v2
       - name: Compile LaTeX document
@@ -36,8 +38,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ steps.newtag.outputs.tag }}
+          release_name: Release ${{ steps.newtag.outputs.tag }}
           draft: false
           prerelease: false
       - name: Upload Release Asset
