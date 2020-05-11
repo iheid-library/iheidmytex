@@ -159,35 +159,8 @@ Indeed, you can write whole sections of code like so:
 \texttt{model1 <- estimate(y \textasciitilde~ x1 + x2, data)}
 
 \subsection{Tables and Figures}
-With base latex, a simple table might look like \hyperref[tab:simple]{Table \ref{tab:simple}}.
 
-\begin{table}[!h]
-\centering
-\caption{Simple Table}
-\label{tab:simple}
-    \begin{tabular}{ | l | l | l |}
-    	\hline
-        & Y1 & Y2 \\ \hline
-        X1 & Outcome 1 & Outcome 2 \\ \hline
-        X2 & Outcome 3 & Outcome 4 \\ \hline
-    \end{tabular}
-    \vspace{0.1em} % some space between caption and table
-    \caption*{\footnotesize{\textit{Source:} Just made it up.}}
-\end{table}
-
-Using the optional packages (see Preamble), we can produce more sophisticated tables like \cref{tab:alternative} or \cref{tab:another-alternative}.
-
-\begin{table}[!h]
-\centering
-\caption{Alternative Typology}
-\label{tab:alternative}
-    \begin{tabular}{ | l | l | l |}
-    	\hline
-        & \makecell{\textbf{Y1}} & \makecell{\textbf{Y2}} \\ \hline
-        \makecell{\textbf{X1}} & \makecell{I\\``Outcome 1''} & \makecell{II\\``Outcome 2''} \\ \hline
-        \makecell{\textbf{X2}} & \makecell{III\\``Outcome 3''} & \makecell{IV\\``Outcome 4''}  \\ \hline
-    \end{tabular}
-\end{table}
+I recommend using the optional packages (see Preamble) to produce more sophisticated tables such as \cref{tab:alternative}.
 
 \begin{table}[H]
 %[H] Changes how LaTex places your tables/figures. Options:
@@ -200,7 +173,7 @@ Using the optional packages (see Preamble), we can produce more sophisticated ta
 % More info: https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
 \centering
 \caption{Yet Another Table}
-\label{tab:another-alternative}
+\label{tab:alternative}
     \begin{tabular}{c c c}
     	\toprule
     	\textbf{Variable X} & \multicolumn{2}{c}{\textbf{Variable Y}} \\
