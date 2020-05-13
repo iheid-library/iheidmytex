@@ -1,4 +1,4 @@
-# iheidmytex
+# iheidmytex  <img src="Graphics/iheidmytex.png" align="right" width="150"/>
 
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/jhollway/iheidmytex/PDF-Release/master)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/jhollway/iheidmytex)
