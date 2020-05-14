@@ -1,7 +1,9 @@
 # iheidmytex  <img src="Graphics/iheidmytex.png" align="right" width="150"/>
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/jhollway/iheidmytex)
+![GitHub Release Date](https://img.shields.io/github/release-date/jhollway/iheidmytex)
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/jhollway/iheidmytex/PDF-Release/master)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/jhollway/iheidmytex)
+![GitHub issues](https://img.shields.io/github/issues-raw/jhollway/iheidmytex)
 ![GitHub All Releases](https://img.shields.io/github/downloads/jhollway/iheidmytex/total)
 
 ## About
