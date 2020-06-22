@@ -16,6 +16,12 @@ You can find the most recent version of the dissertation example
 [here](https://github.com/jhollway/iheidmytex/releases) 
 under the assets associated with each version.
 
+PS: If you find LaTeX intimidating to learn,
+take a look at the [`iheiddown`](https://github.com/jhollway/iheiddown) package instead.
+By using the package with RStudio, 
+you can write your dissertation in [markdown](https://www.markdownguide.org/getting-started/),
+which is much simpler to write (and read).
+Check it out!
 
 ## Getting started
 
@@ -29,7 +35,7 @@ You can also download and use `iheiddiss.tex` or `paper.tex` as templates to get
 
 ## Feedback
 
-Please get in touch with [me](https://jameshollway.com) or raise an issue for this repo
-if you encounter any bugs, if you have any suggestions, or if you want to contribute.
+Please [raise an issue](https://github.com/jhollway/iheidmytex/issues) for this repo
+if you encounter any bugs or if you have any suggestions, or get in touch with [me](https://jameshollway.com) if you want to contribute.
 
 
